@@ -2,8 +2,7 @@ import React from "react";
 import Portfolio from "./components/Portfolio";
 import "./App.css";
 import logo from "./assets/img/logo-maisvalor-branco.png";
-import cnpj from "./assets/img/cnpj.png";
-import indicacao from "./assets/img/indicacao.jpg";
+
 
 
 function App() {
@@ -31,6 +30,14 @@ function App() {
     {
       title: "Window",
       caption: "Photography",
+    },
+    {
+      title: "Pizza",
+      caption: "I love pizza!",
+    },
+    {
+      title: "Pizza",
+      caption: "I love pizza!",
     },
     {
       title: "Pizza",
