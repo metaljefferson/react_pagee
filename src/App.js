@@ -2,6 +2,9 @@ import React from "react";
 import Portfolio from "./components/Portfolio";
 import "./App.css";
 import logo from "./assets/img/logo-maisvalor-branco.png";
+import cnpj from "./assets/img/cnpj.png";
+import indicacao from "./assets/img/indicacao.jpg";
+
 
 function App() {
   const portfolioLinks = [
@@ -38,7 +41,7 @@ function App() {
   return (
     <div className="App">
       <nav
-        className="navbar navbar-expand-lg navbar-dark fixed-top"
+        className="navbar navbar-expand-lg navbar-dark absolute-top"
         id="mainNav"
       >
         <div className="container">
@@ -171,11 +174,10 @@ function App() {
               <ul className="timeline">
                 <li>
                   <div className="timeline-image">
-                    <img
-                      className="rounded-circle img-fluid"
-                      src="img/about/1.jpg"
-                      alt=""
-                    />
+                    <span className="fa-stack fa-4x">
+                      <i className="fa fa-circle fa-stack-1x text-success"></i>
+                      <i className="fa fa-comments-dollar fa-stack-1x fa-inverse"></i>
+                    </span>
                   </div>
                   <div className="timeline-panel">
                     <div className="timeline-heading">
@@ -195,11 +197,10 @@ function App() {
                 </li>
                 <li className="timeline-inverted">
                   <div className="timeline-image">
-                    <img
-                      className="rounded-circle img-fluid"
-                      src="img/about/2.jpg"
-                      alt=""
-                    />
+                    <span className="fa-stack fa-4x">
+                      <i className="fa fa-circle fa-stack-1x text-success"></i>
+                      <i className="fa fa-people-carry-box fa-stack-1x fa-inverse"></i>
+                    </span>
                   </div>
                   <div className="timeline-panel">
                     <div className="timeline-heading">
@@ -215,11 +216,10 @@ function App() {
                 </li>
                 <li>
                   <div className="timeline-image">
-                    <img
-                      className="rounded-circle img-fluid"
-                      src="img/about/3.jpg"
-                      alt=""
-                    />
+                    <span className="fa-stack fa-4x">
+                      <i className="fa fa-circle fa-stack-1x text-success"></i>
+                      <i className="fa fa-file-lines fa-stack fa-inverse"></i>
+                    </span>
                   </div>
                   <div className="timeline-panel">
                     <div className="timeline-heading">
@@ -241,11 +241,10 @@ function App() {
                 </li>
                 <li className="timeline-inverted">
                   <div className="timeline-image">
-                    <img
-                      className="rounded-circle img-fluid"
-                      src="img/about/4.jpg"
-                      alt=""
-                    />
+                    <span className="fa-stack fa-4x">
+                      <i className="fa fa-circle fa-stack text-success"></i>
+                      <i className="fa-brands fa-product-hunt fa-stack-1x fa-inverse"></i>
+                    </span>
                   </div>
                   <div className="timeline-panel">
                     <div className="timeline-heading">
@@ -262,11 +261,13 @@ function App() {
                   </div>
                 </li>
                 <li className="timeline-inverted">
-                  <div class="d-grid gap-2 col-6 mx-auto">
-                    <button class="btn btn-success btn-lg" type="button">
-                    Faça já o seu cadastro e comece  a ganhar dinheiro!
+                  <div class="timeline-image">
+                    <button
+                      class="btn rounded-circle btn-success btn-lg"
+                      type="button"
+                    >
+                      Faça já o seu cadastro!
                     </button>
-                    
                   </div>
                 </li>
               </ul>
@@ -432,7 +433,7 @@ function App() {
         <div className="container">
           <div className="row">
             <div className="col-lg-12 text-center">
-              <h2 className="section-heading text-uppercase">Contact Us</h2>
+              <h2 className="section-heading text-uppercase">Contato</h2>
               <h3 className="section-subheading text-muted">
                 Lorem ipsum dolor sit amet consectetur.
               </h3>
@@ -448,7 +449,7 @@ function App() {
                         className="form-control"
                         id="name"
                         type="text"
-                        placeholder="Your Name *"
+                        placeholder="Nome: *"
                         required="required"
                         data-validation-required-message="Please enter your name."
                       />
@@ -459,7 +460,7 @@ function App() {
                         className="form-control"
                         id="email"
                         type="email"
-                        placeholder="Your Email *"
+                        placeholder="Email: *"
                         required="required"
                         data-validation-required-message="Please enter your email address."
                       />
@@ -470,7 +471,7 @@ function App() {
                         className="form-control"
                         id="phone"
                         type="tel"
-                        placeholder="Your Phone *"
+                        placeholder="Telefone: *"
                         required="required"
                         data-validation-required-message="Please enter your phone number."
                       />
@@ -482,7 +483,7 @@ function App() {
                       <textarea
                         className="form-control"
                         id="message"
-                        placeholder="Your Message *"
+                        placeholder="Mensagem: *"
                         required="required"
                         data-validation-required-message="Please enter a message."
                       ></textarea>
@@ -494,13 +495,14 @@ function App() {
                     <div id="success"></div>
                     <button
                       id="sendMessageButton"
-                      className="btn btn-primary btn-xl text-uppercase"
+                      className="btn btn-success  text-uppercase"
                       type="submit"
                     >
-                      Send Message
+                      Enviar mensagem
                     </button>
                   </div>
                 </div>
+                
               </form>
             </div>
           </div>
@@ -512,24 +514,24 @@ function App() {
           <div className="row align-items-center">
             <div className="col-md-4">
               <span className="copyright">
-                Copyright &copy; Your Website 2019
+                Copyright &copy; 2022 Grupo Mais Valor
               </span>
             </div>
             <div className="col-md-4">
               <ul className="list-inline social-buttons">
                 <li className="list-inline-item">
                   <a href="#something">
-                    <i className="fa fa-twitter"></i>
+                    <i className="fa-brands fa-twitter"></i>
                   </a>
                 </li>
                 <li className="list-inline-item">
                   <a href="#something">
-                    <i className="fa fa-facebook-f"></i>
+                    <i className="fa-brands fa-facebook"></i>
                   </a>
                 </li>
                 <li className="list-inline-item">
                   <a href="#something">
-                    <i className="fa fa-linkedin-in"></i>
+                    <i className="fa-brands fa-linkedin-in"></i>
                   </a>
                 </li>
               </ul>
