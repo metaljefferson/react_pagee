@@ -2,9 +2,6 @@ import React from "react";
 import Portfolio from "./components/Portfolio";
 import "./App.css";
 
-
-
-
 function App() {
   const portfolioLinks = [
     {
@@ -52,7 +49,11 @@ function App() {
         id="mainNav"
       >
         <div className="container">
-          <img className="img-fluid  mx-auto" src={images['logo-maisvalor-branco.png']} alt="" />
+          <img
+            className="img-fluid  mx-auto"
+            src={images["logo-maisvalor-branco.png"]}
+            alt=""
+          />
           <button
             className="navbar-toggler navbar-toggler-right"
             type="button"
@@ -127,161 +128,48 @@ function App() {
               </h3>
             </div>
           </div>
-          <div className="row text-center">
-            <div className="col-md-4">
-              <span className="fa-stack fa-4x">
-                <i className="fa fa-circle fa-stack-2x text-success"></i>
-                <i className="fa fa-credit-card fa-stack-1x fa-inverse"></i>
-              </span>
-              <h4 className="service-heading">
-                Crédito pessoal para clientes correntistas e não correntistas.
-              </h4>
-              <p className="text-muted">
-                Ganhos acima de 3 mil reais, de acordo com a produção.
-              </p>
+          <div className="card-group icon_networks">
+            <div className="card text-white">
+              <img
+                className="card-img-top"
+                src="https://source.unsplash.com/featured/"
+                alt="Card image top"
+              ></img>
+              <div className="card-img-overlay">
+                <h3 className="card-title">Card title</h3>
+                <h4 className="card-subtitle">Card subtitle</h4>
+                <p className="card-text">This is a simple Card example</p>
+              </div>
             </div>
-            <div className="col-md-4">
-              <span className="fa-stack fa-4x">
-                <i className="fa fa-circle fa-stack-2x text-success"></i>
-                <i className="fa fa-briefcase fa-stack-1x fa-inverse"></i>
-              </span>
-              <h4 className="service-heading">Consórcio</h4>
-              <p className="text-muted">
-                Empresa com mais de uma década no mercado.
-              </p>
+            <div className="card text-white">
+              <img
+                className="card-img-top"
+                src="https://source.unsplash.com/featured/"
+                alt="Card image top"
+              ></img>
+              <div className="card-img-overlay">
+                <h3 className="card-title">Card title</h3>
+                <h4 className="card-subtitle">Card subtitle</h4>
+                <p className="card-text">This is a simple Card example</p>
+              </div>
             </div>
-            <div className="col-md-4">
-              <span className="fa-stack fa-4x">
-                <i className="fa fa-circle fa-stack-2x text-success"></i>
-                <i className="fa fa-building fa-stack-1x fa-inverse"></i>
-              </span>
-              <h4 className="service-heading">Financiamento Imobiliário</h4>
-              <p className="text-muted">Amplo portfólio de produtos.</p>
+            <div className="card text-white">
+              <img
+                className="card-img-top"
+                src="https://source.unsplash.com/featured/"
+                alt="Card image top"
+              ></img>
+              <div className="card-img-overlay">
+                <h3 className="card-title">Card title</h3>
+                <h4 className="card-subtitle">Card subtitle</h4>
+                <p className="card-text">This is a simple Card example</p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       <Portfolio portfolioLinks={portfolioLinks}></Portfolio>
-
-      <section className="page-section" id="about">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-12 text-center">
-              <h2 className="section-heading text-uppercase">
-                Dúvidas frequentes:
-              </h2>
-              <h3 className="section-subheading text-muted">
-                Lorem ipsum dolor sit amet consectetur.
-              </h3>
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-lg-12">
-              <ul className="timeline">
-                <li>
-                  <div className="timeline-image">
-                    <span className="fa-stack fa-4x">
-                      <i className="fa fa-circle fa-stack-1x text-success"></i>
-                      <i className="fa fa-comments-dollar fa-stack-1x fa-inverse"></i>
-                    </span>
-                  </div>
-                  <div className="timeline-panel">
-                    <div className="timeline-heading">
-                      <h4>
-                        Preciso Ter um CNPJ Para Trabalhar como Parceiro Mais
-                        Valor?
-                      </h4>
-                    </div>
-                    <div className="timeline-body">
-                      <p className="text-muted">
-                        Não. Este é um programa de bonificação também para
-                        pessoas físicas que buscam por uma renda extra de forma
-                        prática e segura.
-                      </p>
-                    </div>
-                  </div>
-                </li>
-                <li className="timeline-inverted">
-                  <div className="timeline-image">
-                    <span className="fa-stack fa-4x">
-                      <i className="fa fa-circle fa-stack-1x text-success"></i>
-                      <i className="fa fa-people-carry-box fa-stack-1x fa-inverse"></i>
-                    </span>
-                  </div>
-                  <div className="timeline-panel">
-                    <div className="timeline-heading">
-                      <h4>Tem Limite para Indicação de Clientes?</h4>
-                    </div>
-                    <div className="timeline-body">
-                      <p className="text-muted">
-                        Não. Você pode indicar quantos clientes quiser e de
-                        qualquer localidade.
-                      </p>
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div className="timeline-image">
-                    <span className="fa-stack fa-4x">
-                      <i className="fa fa-circle fa-stack-1x text-success"></i>
-                      <i className="fa fa-file-lines fa-stack fa-inverse"></i>
-                    </span>
-                  </div>
-                  <div className="timeline-panel">
-                    <div className="timeline-heading">
-                      <h4>
-                        Quais Documentos Eu Preciso Para Indicar um Cliente?
-                      </h4>
-                    </div>
-                    <div className="timeline-body">
-                      <p className="text-muted">
-                        Para realizar a indicação serão necessários alguns
-                        documentos, lembrando que o documento de identificação
-                        pessoal (CNH ou RG) é obrigatório. Caso o indicado não
-                        possua os demais documentos, a Mais Valor poderá entrar
-                        em contato solicitando o complemento dos documentos
-                        necessários.
-                      </p>
-                    </div>
-                  </div>
-                </li>
-                <li className="timeline-inverted">
-                  <div className="timeline-image">
-                    <span className="fa-stack fa-4x">
-                      <i className="fa fa-circle fa-stack text-success"></i>
-                      <i className="fa-brands fa-product-hunt fa-stack-1x fa-inverse"></i>
-                    </span>
-                  </div>
-                  <div className="timeline-panel">
-                    <div className="timeline-heading">
-                      <h4>Como Saber o Melhor Produto para Trabalhar?</h4>
-                    </div>
-                    <div className="timeline-body">
-                      <p className="text-muted">
-                        Os parceiros da Mais Valor recebem todo o suporte e
-                        treinamento, com mesa de Análise especializada nos
-                        produtos. Dessa forma, você poderá escolher os produtos
-                        que mais combinam com o seu perfil e disponibilidade.
-                      </p>
-                    </div>
-                  </div>
-                </li>
-                <li className="timeline-inverted">
-                  <div class="timeline-image">
-                    <button
-                      class="btn rounded-circle btn-success btn-lg"
-                      type="button"
-                    >
-                      Faça já o seu cadastro!
-                    </button>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
 
       <section className="bg-light page-section" id="team">
         <div className="container">
@@ -399,16 +287,15 @@ function App() {
         <div className="accordion  d-lg-flex" id="accordion">
           <div className="accordion-item">
             <h2 className="accordion-header" id="one">
-              
               <button
-               className="accordion-button btn"
+                className="accordion-button btn"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#collapse-one"
                 aria-expanded="true"
                 aria-controls="collapse-one"
               >
-                <img className="card-img-top" src={images['cnpj.png']}></img>
+                <img className="card-img-top" src={images["cnpj.png"]}></img>
               </button>
             </h2>
             <div
@@ -432,7 +319,10 @@ function App() {
                 aria-expanded="false"
                 aria-controls="collapse-two"
               >
-              <img className="img-fluid card-img-top" src={images['cnpj.png']}></img>
+                <img
+                  className="img-fluid card-img-top"
+                  src={images["cnpj.png"]}
+                ></img>
               </button>
             </h2>
             <div
@@ -456,7 +346,10 @@ function App() {
                 aria-expanded="false"
                 aria-controls="collapse-three"
               >
-              <img className="img-fluid card-img-top" src={images['cnpj.png']}></img>
+                <img
+                  className="img-fluid card-img-top"
+                  src={images["cnpj.png"]}
+                ></img>
               </button>
             </h2>
             <div
@@ -481,7 +374,10 @@ function App() {
                 aria-expanded="false"
                 aria-controls="collapse-four"
               >
-              <img className="img-fluid card-img-top" src={images['cnpj.png']}></img>
+                <img
+                  className="img-fluid card-img-top"
+                  src={images["cnpj.png"]}
+                ></img>
               </button>
             </h2>
             <div
@@ -506,7 +402,10 @@ function App() {
                 aria-expanded="false"
                 aria-controls="collapse-five"
               >
-              <img className="img-fluid card-img-top" src={images['cnpj.png']}></img>
+                <img
+                  className="img-fluid card-img-top"
+                  src={images["cnpj.png"]}
+                ></img>
               </button>
             </h2>
             <div
@@ -531,7 +430,10 @@ function App() {
                 aria-expanded="false"
                 aria-controls="collapse-six"
               >
-              <img className="img-fluid card-img-top" src={images['cnpj.png']}></img>
+                <img
+                  className="img-fluid card-img-top"
+                  src={images["cnpj.png"]}
+                ></img>
               </button>
             </h2>
             <div
@@ -547,6 +449,147 @@ function App() {
           </div>
         </div>
       </div>
+
+      <section id="faq" className="faq section-bg">
+        <div className="container">
+          <div className="section-title ">
+            <h2>Dúvidas frequentes:</h2>
+            <p>
+              Magnam dolores commodi suscipit. Necessitatibus eius consequatur
+              ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
+              quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
+              Quia fugiat sit in iste officiis commodi quidem hic quas.
+            </p>
+          </div>
+
+          <div className="faq-list p-3 bg-success bg-opacity-10 border border-info border-start-0 rounded-end ">
+            <ul>
+              <li data-aos="fade-up" data-aos-delay="100">
+                <a
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq-list-2"
+                  className="collapsed"
+                >
+                  <i className="fas fa-circle-question text-success "></i>{" "}
+                  Preciso ter um CNPJ para trabalhar como parceiro Mais Valor?{" "}
+                  <i className="fa icon-arrow-collapsed"></i>
+                </a>
+                <div
+                  id="faq-list-2"
+                  className="collapse"
+                  data-bs-parent=".faq-list"
+                >
+                  <p>
+                    Não. Este é um programa de bonificação também para pessoas
+                    físicas que buscam por uma renda extra de forma prática e
+                    segura.
+                  </p>
+                </div>
+              </li>
+
+              <li data-aos="fade-up" data-aos-delay="200">
+                <i className="bx bx-help-circle icon-help"></i>{" "}
+                <a
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq-list-3"
+                  className="collapsed"
+                >
+                  <i className="fas fa-circle-question text-success "></i> Tem
+                  limite para indicação de clientes?{" "}
+                  <i className="fa icon-arrow-collapsed"></i>
+                </a>
+                <div
+                  id="faq-list-3"
+                  className="collapse"
+                  data-bs-parent=".faq-list"
+                >
+                  <p>
+                    Não. Você pode indicar quantos clientes quiser e de qualquer
+                    localidade.
+                  </p>
+                </div>
+              </li>
+
+              <li data-aos="fade-up" data-aos-delay="300">
+                <i className="bx bx-help-circle icon-help"></i>{" "}
+                <a
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq-list-4"
+                  className="collapsed"
+                >
+                  <i className="fas fa-circle-question text-success "></i> Quais
+                  documentos eu preciso para indicar um cliente?{" "}
+                  <i className="fa icon-arrow-collapsed"></i>
+                </a>
+                <div
+                  id="faq-list-4"
+                  className="collapse"
+                  data-bs-parent=".faq-list"
+                >
+                  <p>
+                    Para realizar a indicação serão necessários alguns
+                    documentos, lembrando que o documento de identificação
+                    pessoal (CNH ou RG) é obrigatório. Caso o indicado não
+                    possua os demais documentos, a Mais Valor poderá entrar em
+                    contato solicitando o complemento dos documentos
+                    necessários.
+                  </p>
+                </div>
+              </li>
+
+              <li data-aos="fade-up" data-aos-delay="400">
+                <i className="bx bx-help-circle icon-help"></i>{" "}
+                <a
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq-list-5"
+                  className="collapsed"
+                >
+                  <i className="fas fa-circle-question text-success "></i> Como
+                  é feita a validação de um cliente indicado?{" "}
+                  <i className="fa icon-arrow-collapsed"></i>
+                </a>
+                <div
+                  id="faq-list-5"
+                  className="collapse"
+                  data-bs-parent=".faq-list"
+                >
+                  <p>
+                    A validação é realizada em duas etapas. Primeiramente será
+                    realizado a análise de crédito e validação dos documentos
+                    dos clientes indicados e logo depois a contratação do
+                    crédito pré-aprovado pelo cliente.
+                  </p>
+                </div>
+              </li>
+
+              <li data-aos="fade-up" data-aos-delay="500">
+                <i className="bx bx-help-circle icon-help"></i>{" "}
+                <a
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq-list-6"
+                  className="collapsed"
+                >
+                  <i className="fas fa-circle-question text-success "></i> Como
+                  saber o melhor produto para trabalhar?{" "}
+                  <i className="fa icon-arrow-collapsed"></i>
+                </a>
+                <div
+                  id="faq-list-6"
+                  className="collapse"
+                  data-bs-parent=".faq-list"
+                >
+                  <p>
+                    Os parceiros da Mais Valor recebem todo o suporte e
+                    treinamento, com mesa de Análise especializada nos produtos.
+                    Dessa forma, você poderá escolher os produtos que mais
+                    combinam com o seu perfil e disponibilidade.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
       <section className="page-section" id="contact">
         <div className="container">
@@ -630,27 +673,24 @@ function App() {
       <footer className="text-center text-lg-start">
         <div className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
           <div className="me-5 d-none d-lg-block">
-            <span>Conecte-se conosco nas redes sociais</span>
+            <span>Conecte-se conosco nas redes sociais :</span>
           </div>
 
           <div className="icon_networks">
-            <a href="" className="me-4 text-reset">
-              <i className="fab fa-facebook-f"></i>
+            <a href="#" className="me-4 text-reset">
+              <img src={images["facebook.png"]}></img>
             </a>
-            <a href="" className="me-4 text-reset">
-              <i className="fab fa-twitter"></i>
+            <a href="#" className="me-4 text-reset">
+              <img src={images["twitter.png"]}></img>
             </a>
-            <a href="" className="me-4 text-reset">
-              <i className="fab fa-google"></i>
+            <a href="#" className="me-4 text-reset">
+              <img src={images["instagram.png"]}></img>
             </a>
-            <a href="" className="me-4 text-reset">
-              <i className="fab fa-instagram"></i>
+            <a href="#" className="me-4 text-reset">
+              <img src={images["linkedin.png"]}></img>
             </a>
-            <a href="" className="me-4 text-reset">
-              <i className="fab fa-linkedin"></i>
-            </a>
-            <a href="" className="me-4 text-reset">
-              <i className="fab fa-github"></i>
+            <a href="#" className="me-4 text-reset">
+              <img src={images["whatsapp.png"]}></img>
             </a>
           </div>
         </div>
@@ -660,7 +700,7 @@ function App() {
             <div className="row mt-3">
               <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                 <h6 className="text-uppercase fw-bold mb-4">
-                  <i className="fas fa-gem me-3"></i>Grupo Mais Valor
+                  <i className="fas fa-credit-card me-3"></i> Grupo Mais Valor
                 </h6>
                 <p>
                   A Mais Valor é uma das maiores gestoras de negócios,
@@ -674,46 +714,46 @@ function App() {
                 <h6 className="text-uppercase fw-bold mb-4">Produtos</h6>
                 <p>
                   <a href="#!" className="text-reset">
-                    Angular
+                    Empréstimo FGTS
                   </a>
                 </p>
                 <p>
                   <a href="#!" className="text-reset">
-                    React
+                    Empréstimo Consignado
                   </a>
                 </p>
                 <p>
                   <a href="#!" className="text-reset">
-                    Vue
+                    Financiamento de Veículos
                   </a>
                 </p>
                 <p>
                   <a href="#!" className="text-reset">
-                    Laravel
+                    Seguros
                   </a>
                 </p>
               </div>
 
-              <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                <h6 className="text-uppercase fw-bold mb-4">Sobre Nós</h6>
+              <div className="col-md-3 col-lg-2 col-xl-2 mx-auto">
+                <h6 className="text-uppercase fw-bold mb-4">Informações</h6>
                 <p>
                   <a href="#!" className="text-reset">
-                    Pricing
+                    Trabalhe Conosco
                   </a>
                 </p>
                 <p>
                   <a href="#!" className="text-reset">
-                    Settings
+                    Negocie sua dívida
                   </a>
                 </p>
                 <p>
                   <a href="#!" className="text-reset">
-                    Orders
+                    Blog
                   </a>
                 </p>
                 <p>
                   <a href="#!" className="text-reset">
-                    Help
+                    Código de Defesa do Consumidor
                   </a>
                 </p>
               </div>
@@ -725,7 +765,7 @@ function App() {
                   184 Sala 601, Centro, SP, 01013-904
                 </p>
                 <p>
-                  <i className="fas fa-envelope me-3"></i>
+                  <i className="fas fa-envelope me-3"></i>{" "}
                   sac@grupomaisvalor.com.br
                 </p>
                 <p>
@@ -740,7 +780,7 @@ function App() {
           className="text-center p-4"
           style={{ backgroundColor: "rgba(0, 0, 0, 0.05)" }}
         >
-          Copyright © 2019/2022 - Grupo Mais Valor. Todos os direitos reservados
+          Copyright © 2022 - Grupo Mais Valor. Todos os direitos reservados
         </div>
       </footer>
     </div>
@@ -749,11 +789,15 @@ function App() {
 
 function importAll(r) {
   let images = {};
-   r.keys().forEach((item, index) => { images[item.replace('./', '')] = r(item); });
-  return images
- }
+  r.keys().forEach((item, index) => {
+    images[item.replace("./", "")] = r(item);
+  });
+  return images;
+}
 
- const images = importAll(require.context('./assets/img/', false, /\.(png|jpe?g|svg)$/));
- console.log(images)
+const images = importAll(
+  require.context("./assets/img/", false, /\.(png|jpe?g|svg)$/)
+);
+console.log(images);
 
 export default App;
