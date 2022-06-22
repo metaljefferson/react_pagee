@@ -51,7 +51,7 @@ function App() {
         <div className="container">
           <img
             className="img-fluid  mx-auto"
-            src={images["logo-maisvalor-branco.png"]}
+            src={images["logo-mv-70x51.svg"]}
             alt=""
           />
           <button
@@ -128,41 +128,69 @@ function App() {
               </h3>
             </div>
           </div>
-          <div className="card-group icon_networks">
-            <div className="card text-white">
-              <img
-                className="card-img-top"
-                src="https://source.unsplash.com/featured/"
-                alt="Card image top"
-              ></img>
-              <div className="card-img-overlay">
-                <h3 className="card-title">Card title</h3>
-                <h4 className="card-subtitle">Card subtitle</h4>
-                <p className="card-text">This is a simple Card example</p>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 col-lg-4">
+                <div class="card-box">
+                  <div class="card-thumbnail">
+                    <img src={images["header-bg.jpg"]} class="img-fluid"></img>
+                  </div>
+                  <h3>
+                    <a href="#" class="mt-2 text-success">
+                      What is Lorem Ipsum?
+                    </a>
+                  </h3>
+                  <p class="text-secondary">
+                    There are many variations of passages of Lorem Ipsum
+                    available, but the majority have suffered alteration in some
+                    form, by injected humour
+                  </p>
+                  <a href="#" class="btn btn-sm btn-success float-left">
+                    Financiar Carro
+                  </a>
+                </div>
               </div>
-            </div>
-            <div className="card text-white">
-              <img
-                className="card-img-top"
-                src="https://source.unsplash.com/featured/"
-                alt="Card image top"
-              ></img>
-              <div className="card-img-overlay">
-                <h3 className="card-title">Card title</h3>
-                <h4 className="card-subtitle">Card subtitle</h4>
-                <p className="card-text">This is a simple Card example</p>
+
+              <div class="col-md-6 col-lg-4">
+                <div class="card-box">
+                  <div class="card-thumbnail">
+                    <img src={images["header-bg.jpg"]} class="img-fluid"></img>
+                  </div>
+                  <h3>
+                    <a href="#" class="mt-2 text-success">
+                      Why do we use it?
+                    </a>
+                  </h3>
+                  <p class="text-secondary">
+                    There are many variations of passages of Lorem Ipsum
+                    available, but the majority have suffered alteration in some
+                    form, by injected humour
+                  </p>
+                  <a href="#" class="btn btn-sm btn-success float-left">
+                    Conhecer emprestimo
+                  </a>
+                </div>
               </div>
-            </div>
-            <div className="card text-white">
-              <img
-                className="card-img-top"
-                src="https://source.unsplash.com/featured/"
-                alt="Card image top"
-              ></img>
-              <div className="card-img-overlay">
-                <h3 className="card-title">Card title</h3>
-                <h4 className="card-subtitle">Card subtitle</h4>
-                <p className="card-text">This is a simple Card example</p>
+
+              <div class="col-md-6 col-lg-4">
+                <div class="card-box">
+                  <div class="card-thumbnail">
+                    <img src={images["header-bg.jpg"]} class="img-fluid"></img>
+                  </div>
+                  <h3>
+                    <a href="#" class="mt-2 text-success">
+                      Where does it come from?
+                    </a>
+                  </h3>
+                  <p class="text-secondary">
+                    There are many variations of passages of Lorem Ipsum
+                    available, but the majority have suffered alteration in some
+                    form, by injected humour
+                  </p>
+                  <a href="#" class="btn btn-sm btn-success float-left">
+                    Financiamento
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -281,7 +309,7 @@ function App() {
         </div>
       </section>
 
-      <h2 className="text-center m-3">Nossos Parceiros:</h2>
+      <h2 className="text-center m-5">Nossos Parceiros:</h2>
 
       <div className="container card-group  w-60">
         <div className="accordion  d-lg-flex" id="accordion">
@@ -295,7 +323,10 @@ function App() {
                 aria-expanded="true"
                 aria-controls="collapse-one"
               >
-                <img className="card-img-top" src={images["cnpj.png"]}></img>
+                <img
+                  className="card-img-top"
+                  src={images["daycoval1.svg"]}
+                ></img>
               </button>
             </h2>
             <div
@@ -305,7 +336,7 @@ function App() {
               data-bs-parent="#accordion"
             >
               <div className="accordion-body">
-                <p>This is accordion body.</p>
+                <p>Banco Daycoval CNPJ 62.232.889/0001-90</p>
               </div>
             </div>
           </div>
@@ -321,7 +352,7 @@ function App() {
               >
                 <img
                   className="img-fluid card-img-top"
-                  src={images["cnpj.png"]}
+                  src={images["safra.svg"]}
                 ></img>
               </button>
             </h2>
@@ -332,7 +363,7 @@ function App() {
               data-bs-parent="#accordion"
             >
               <div className="accordion-body">
-                <p>This is accordion body.</p>
+                <p>Banco Safra S/A - CNPJ: 58.160.789/0001-28</p>
               </div>
             </div>
           </div>
@@ -348,7 +379,7 @@ function App() {
               >
                 <img
                   className="img-fluid card-img-top"
-                  src={images["cnpj.png"]}
+                  src={images["banco-santander.svg"]}
                 ></img>
               </button>
             </h2>
@@ -359,7 +390,11 @@ function App() {
               data-bs-parent="#accordion"
             >
               <div className="accordion-body">
-                <p>This is accordion body.</p>
+                <p>
+                  2022 Banco Santander (Brasil) S.A., CNPJ: 90.400.888/0001-42
+                  Av. Presidente Juscelino Kubitscheck 2041/2235 – Vila Olímpia
+                  – São Paulo/SP.
+                </p>
               </div>
             </div>
           </div>
@@ -376,7 +411,7 @@ function App() {
               >
                 <img
                   className="img-fluid card-img-top"
-                  src={images["cnpj.png"]}
+                  src={images["bb.svg"]}
                 ></img>
               </button>
             </h2>
@@ -387,7 +422,10 @@ function App() {
               data-bs-parent="#accordion"
             >
               <div className="accordion-body">
-                <p>This is accordion body.</p>
+                <p>
+                  © Banco do Brasil S/A - CNPJ 00.000.000/0001-91 SAUN QD 5 LT
+                  B, Asa Norte, Brasília-DF, Brasil - CEP 70040-912
+                </p>
               </div>
             </div>
           </div>
@@ -404,7 +442,7 @@ function App() {
               >
                 <img
                   className="img-fluid card-img-top"
-                  src={images["cnpj.png"]}
+                  src={images["bradesco.svg"]}
                 ></img>
               </button>
             </h2>
@@ -415,7 +453,10 @@ function App() {
               data-bs-parent="#accordion"
             >
               <div className="accordion-body">
-                <p>This is accordion body.</p>
+                <p>
+                  Banco Bradesco SA | CNPJ: 60.746.948.0001-12 Cidade De Deus,
+                  S/Nº Vila Yara | Osasco | SP | CEP: 06029-900
+                </p>
               </div>
             </div>
           </div>
@@ -432,7 +473,7 @@ function App() {
               >
                 <img
                   className="img-fluid card-img-top"
-                  src={images["cnpj.png"]}
+                  src={images["itau1.svg"]}
                 ></img>
               </button>
             </h2>
@@ -443,7 +484,11 @@ function App() {
               data-bs-parent="#accordion"
             >
               <div className="accordion-body">
-                <p>This is accordion body.</p>
+                <p>
+                  Itaú Unibanco Holding S.A. CNPJ: 60.872.504/0001-23 Praça
+                  Alfredo Egydio de Souza Aranha, 100, Torre Olavo Setubal,
+                  Parque Jabaquara - CEP 04344-902 - São Paulo - Brasil
+                </p>
               </div>
             </div>
           </div>
@@ -462,13 +507,13 @@ function App() {
             </p>
           </div>
 
-          <div className="faq-list p-3 bg-success bg-opacity-10 border border-info border-start-0 rounded-end ">
+          <div className="faq-list text-uppercase p-3  bg-success bg-opacity-10 border border-info border-start-0 rounded-end ">
             <ul>
               <li data-aos="fade-up" data-aos-delay="100">
                 <a
                   data-bs-toggle="collapse"
                   data-bs-target="#faq-list-2"
-                  className="collapsed"
+                  className="collapsed "
                 >
                   <i className="fas fa-circle-question text-success "></i>{" "}
                   Preciso ter um CNPJ para trabalhar como parceiro Mais Valor?{" "}
@@ -678,19 +723,19 @@ function App() {
 
           <div className="icon_networks">
             <a href="#" className="me-4 text-reset">
-              <img src={images["facebook.png"]}></img>
+              <img src={images["facebook.svg"]}></img>
             </a>
             <a href="#" className="me-4 text-reset">
-              <img src={images["twitter.png"]}></img>
+              <img src={images["twitter.svg"]}></img>
             </a>
             <a href="#" className="me-4 text-reset">
-              <img src={images["instagram.png"]}></img>
+              <img src={images["instagram.svg"]}></img>
             </a>
             <a href="#" className="me-4 text-reset">
-              <img src={images["linkedin.png"]}></img>
+              <img src={images["linkedin.svg"]}></img>
             </a>
             <a href="#" className="me-4 text-reset">
-              <img src={images["whatsapp.png"]}></img>
+              <img src={images["whatsapp.svg"]}></img>
             </a>
           </div>
         </div>
