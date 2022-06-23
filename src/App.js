@@ -130,7 +130,7 @@ function App() {
           </div>
           <div class="container">
             <div class="row">
-              <div class="col-md-6 col-lg-4">
+              {/* <div class="col-md-6 col-lg-4">
                 <div class="card-box">
                   <div class="card-thumbnail">
                     <img src={images["header-bg.jpg"]} class="img-fluid"></img>
@@ -149,49 +149,30 @@ function App() {
                     Financiar Carro
                   </a>
                 </div>
+              </div> */}
+
+              <figure>
+                <img></img>
+              </figure>
+              <div className="d-flex">
+                <figure className="">
+                  <img className="img-fluid rounded" src={images['header-bg.jpg']}></img>
+                  <figcaption>Ola Brasil</figcaption>
+                </figure>
+
+                <figure className="">
+                  <img className="img-fluid rounded" src={images['header-bg.jpg']}></img>
+                  <figcaption className="text-success">Ola Brasil</figcaption>
+                </figure>
+
+                <figure className="">
+                  <img className="img-fluid rounded" src={images['header-bg.jpg']}></img>
+                  <figcaption>Ola Brasil</figcaption>
+                </figure>
+
               </div>
 
-              <div class="col-md-6 col-lg-4">
-                <div class="card-box">
-                  <div class="card-thumbnail">
-                    <img src={images["header-bg.jpg"]} class="img-fluid"></img>
-                  </div>
-                  <h3>
-                    <a href="#" class="mt-2 text-success">
-                      Why do we use it?
-                    </a>
-                  </h3>
-                  <p class="text-secondary">
-                    There are many variations of passages of Lorem Ipsum
-                    available, but the majority have suffered alteration in some
-                    form, by injected humour
-                  </p>
-                  <a href="#" class="btn btn-sm btn-success float-left">
-                    Conhecer emprestimo
-                  </a>
-                </div>
-              </div>
 
-              <div class="col-md-6 col-lg-4">
-                <div class="card-box">
-                  <div class="card-thumbnail">
-                    <img src={images["header-bg.jpg"]} class="img-fluid"></img>
-                  </div>
-                  <h3>
-                    <a href="#" class="mt-2 text-success">
-                      Where does it come from?
-                    </a>
-                  </h3>
-                  <p class="text-secondary">
-                    There are many variations of passages of Lorem Ipsum
-                    available, but the majority have suffered alteration in some
-                    form, by injected humour
-                  </p>
-                  <a href="#" class="btn btn-sm btn-success float-left">
-                    Financiamento
-                  </a>
-                </div>
-              </div>
             </div>
           </div>
         </div>

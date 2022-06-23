@@ -12,10 +12,12 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+
 .icon_networks {
   display: flex;
   gap: 1rem;
 }
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -35,30 +37,37 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
+
 .section-title {
   text-align: center;
   padding-bottom: 30px;
 }
+
 .faq .faq-list {
   padding: 0 100px;
 }
+
 .faq .faq-list ul {
   padding: 0;
   list-style: none;
 }
-.faq .faq-list li + li {
+
+.faq .faq-list li+li {
   margin-top: 15px;
 }
+
 .faq .faq-list li {
   padding: 20px;
   background: #fff;
   border-radius: 4px;
   position: relative;
 }
+
 .faq .faq-list a {
   display: block;
   position: relative;
@@ -70,6 +79,7 @@
   outline: none;
   cursor: pointer;
 }
+
 .faq .faq-list .icon-help {
   font-size: 24px;
   position: absolute;
@@ -77,45 +87,54 @@
   left: 20px;
   color: #76b5ee;
 }
-.faq .faq-list .icon-show, .faq .faq-list .icon-close {
+
+.faq .faq-list .icon-show,
+.faq .faq-list .icon-close {
   font-size: 24px;
   position: absolute;
   right: 0;
   top: 0;
 }
+
 .faq .faq-list p {
   margin-bottom: 0;
   padding: 10px 0 0 0;
 }
+
 .faq .faq-list .icon-show {
   display: none;
 }
+
 .faq .faq-list a.collapsed {
   color: #343a40;
 }
+
 .faq .faq-list a.collapsed:hover {
   color: #1977cc;
 }
+
 .faq .faq-list a.collapsed .icon-show {
   display: inline-block;
 }
+
 .faq .faq-list a.collapsed .icon-close {
   display: none;
 }
 
-a[data-bs-toggle] i.icon-arrow-collapsed:before{
+a[data-bs-toggle] i.icon-arrow-collapsed:before {
 
   content: "\f106";
-  
-  
+
+
 }
 
 
-a[data-bs-toggle].collapsed i.icon-arrow-collapsed:before{
+a[data-bs-toggle].collapsed i.icon-arrow-collapsed:before {
 
   content: "\f107";
-  
+
 }
+
 @media (max-width: 1200px) {
   .faq .faq-list {
     padding: 0;
@@ -130,9 +149,11 @@ a[data-bs-toggle].collapsed i.icon-arrow-collapsed:before{
   float: left;
   border-radius: 10px;
 }
-.card-box:hover{
+
+.card-box:hover {
   transform: scale(1.1);
 }
+
 .card-box .card-thumbnail {
   max-height: 200px;
   overflow: hidden;
@@ -145,5 +166,10 @@ a[data-bs-toggle].collapsed i.icon-arrow-collapsed:before{
   text-decoration: none;
 }
 
+.figure {
+  position: relative;
+}
 
-
+.figure figcaption {
+  position: absolute;
+}
