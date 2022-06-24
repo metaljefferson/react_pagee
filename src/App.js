@@ -130,46 +130,48 @@ function App() {
           </div>
           <div class="container">
             <div class="row">
-              {/* <div class="col-md-6 col-lg-4">
-                <div class="card-box">
-                  <div class="card-thumbnail">
-                    <img src={images["header-bg.jpg"]} class="img-fluid"></img>
-                  </div>
-                  <h3>
-                    <a href="#" class="mt-2 text-success">
-                      What is Lorem Ipsum?
-                    </a>
-                  </h3>
-                  <p class="text-secondary">
-                    There are many variations of passages of Lorem Ipsum
-                    available, but the majority have suffered alteration in some
-                    form, by injected humour
-                  </p>
-                  <a href="#" class="btn btn-sm btn-success float-left">
-                    Financiar Carro
-                  </a>
-                </div>
-              </div> */}
 
-              <figure>
-                <img></img>
-              </figure>
               <div className="d-flex">
-                <figure className="">
-                  <img className="img-fluid rounded" src={images['header-bg.jpg']}></img>
-                  <figcaption>Ola Brasil</figcaption>
+                <figure class="image-block">
+                  <img className="img-fluid" src="https://images.pexels.com/photos/1680140/pexels-photo-1680140.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" />
+                  <figcaption>
+                    <h3>
+                      More Info
+                    </h3>
+                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                    <button>
+                      More Info
+                    </button>
+                  </figcaption>
                 </figure>
 
-                <figure className="">
-                  <img className="img-fluid rounded" src={images['header-bg.jpg']}></img>
-                  <figcaption className="text-success">Ola Brasil</figcaption>
+                <figure class="image-block figure">
+                  <img className="img-fluid" src="https://images.pexels.com/photos/1680140/pexels-photo-1680140.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" />
+                <div>
+                  <figcaption className="">
+                    <h3>
+                      More Info
+                    </h3>
+                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                    <button>
+                      More Info
+                    </button>
+                  </figcaption>
+                  </div>
                 </figure>
-
-                <figure className="">
-                  <img className="img-fluid rounded" src={images['header-bg.jpg']}></img>
-                  <figcaption>Ola Brasil</figcaption>
+                
+                <figure class="image-block">
+                  <img className="img-fluid" src="https://images.pexels.com/photos/1680140/pexels-photo-1680140.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" />
+                  <figcaption>
+                    <h3>
+                      More Info
+                    </h3>
+                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                    <button>
+                      More Info
+                    </button>
+                  </figcaption>
                 </figure>
-
               </div>
 
 
