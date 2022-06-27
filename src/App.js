@@ -48,55 +48,95 @@ function App() {
         className="navbar navbar-expand-lg navbar-dark absolute-top"
         id="mainNav"
       >
-        <div className="container">
-          <img
-            className="img-fluid  mx-auto"
-            src={images["logo-mv-70x51.svg"]}
-            alt=""
-          />
-          <button
-            className="navbar-toggler navbar-toggler-right"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarResponsive"
-            aria-controls="navbarResponsive"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            Menu
-            <i className="fa fa-bars"></i>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarResponsive">
-            <ul className="navbar-nav text-uppercase ml-auto">
-              <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="#menu">
-                  Home
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="#portfolio">
-                  Portfolio
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="#about">
-                  Produtos
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="#team">
-                  Contato
-                </a>
-              </li>
-              <li className="nav-item">
-                <a
-                  className="btn btn-success text-uppercase js-scroll-trigger"
-                  href="#services"
-                >
-                  Contratar
-                </a>
-              </li>
-            </ul>
+        <div id="mainNavigation">
+          <nav role="navigation">
+            <div class="py-3 text-center border-bottom">
+              <img src={images["logo-mv-70x51.svg"]} alt="" class="invert" />
+            </div>
+          </nav>
+          <div class="navbar-expand-md">
+            <div class="navbar-dark text-center my-2">
+              <button
+                class="navbar-toggler w-50"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <i class="fa-solid fa-bars"></i> <span>Menu</span>
+              </button>
+            </div>
+            <div
+              class="text-center mt-3 collapse navbar-collapse"
+              id="navbarNavDropdown"
+            >
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">
+                    Home
+                  </a>
+                </li>
+                <li id="Services" class="nav-item">
+                  <a class="nav-link " href="#services">
+                    Serviços
+                  </a>
+                </li>
+                <li id="Portfolio" class="nav-item">
+                  <a class="nav-link" href="#portfolio">
+                    Portfolio
+                  </a>
+                </li>
+                <li id="Contato" class="nav-item">
+                  <a class="nav-link" href="#contact">
+                    Contato
+                  </a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdownMenuLink"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Company
+                  </a>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="navbarDropdownMenuLink"
+                  >
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        Blog
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        About Us
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        Contact us
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="alert alert-warning alert-dismissible d-flex align-items-center fade show">
+          <i class="fa-solid fa-triangle-exclamation"></i>
+            <strong class="mx-2">ESCLARECIMENTO AOS NOSSOS CLIENTES E COLABORADORES !</strong> There was a problem with your
+            network connection.
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="alert"
+            ></button>
           </div>
         </div>
       </nav>
@@ -110,7 +150,7 @@ function App() {
             </div>
             <a
               className="btn btn-success  text-uppercase js-scroll-trigger"
-              href="#services"
+              href="#"
             >
               Contratar
             </a>
@@ -119,62 +159,234 @@ function App() {
       </header>
 
       <section className="page-section" id="services">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-12 text-center">
-              <h2 className="section-heading text-uppercase">Serviços</h2>
-              <h3 className="section-subheading text-muted">
-                Faça parte de uma das maiores redes de crédito do Brasil!
-              </h3>
-            </div>
+        <div
+          id="carouselMultiItemExample"
+          class="carousel slide carousel-dark text-center"
+          data-mdb-ride="carousel"
+        >
+          <div class="d-flex justify-content-center mb-4">
+            <button
+              class="carousel-control-prev position-relative"
+              type="button"
+              data-mdb-target="#carouselMultiItemExample"
+              data-mdb-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next position-relative"
+              type="button"
+              data-mdb-target="#carouselMultiItemExample"
+              data-mdb-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
-          <div class="container">
-            <div class="row">
 
-              <div className="d-flex">
-                <figure class="image-block">
-                  <img className="img-fluid" src="https://images.pexels.com/photos/1680140/pexels-photo-1680140.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" />
-                  <figcaption>
-                    <h3>
-                      More Info
-                    </h3>
-                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-                    <button>
-                      More Info
-                    </button>
-                  </figcaption>
-                </figure>
-
-                <figure class="image-block figure">
-                  <img className="img-fluid" src="https://images.pexels.com/photos/1680140/pexels-photo-1680140.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" />
-                <div>
-                  <figcaption className="">
-                    <h3>
-                      More Info
-                    </h3>
-                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-                    <button>
-                      More Info
-                    </button>
-                  </figcaption>
+          <div class="carousel-inner py-4">
+            <div class="carousel-item active">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-4">
+                    <div class="card">
+                      <img
+                        src="https://mdbcdn.b-cdn.net/img/new/standard/nature/181.webp"
+                        class="card-img-top"
+                        alt="Waterfall"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">
+                          Some quick example text to build on the card title and
+                          make up the bulk of the card's content.
+                        </p>
+                        <a href="#!" class="btn btn-primary">
+                          Button
+                        </a>
+                      </div>
+                    </div>
                   </div>
-                </figure>
-                
-                <figure class="image-block">
-                  <img className="img-fluid" src="https://images.pexels.com/photos/1680140/pexels-photo-1680140.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" />
-                  <figcaption>
-                    <h3>
-                      More Info
-                    </h3>
-                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-                    <button>
-                      More Info
-                    </button>
-                  </figcaption>
-                </figure>
+
+                  <div class="col-lg-4 d-none d-lg-block">
+                    <div class="card">
+                      <img
+                        src="https://mdbcdn.b-cdn.net/img/new/standard/nature/182.webp"
+                        class="card-img-top"
+                        alt="Sunset Over the Sea"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">
+                          Some quick example text to build on the card title and
+                          make up the bulk of the card's content.
+                        </p>
+                        <a href="#!" class="btn btn-primary">
+                          Button
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 d-none d-lg-block">
+                    <div class="card">
+                      <img
+                        src="https://mdbcdn.b-cdn.net/img/new/standard/nature/183.webp"
+                        class="card-img-top"
+                        alt="Sunset over the Sea"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">
+                          Some quick example text to build on the card title and
+                          make up the bulk of the card's content.
+                        </p>
+                        <a href="#!" class="btn btn-primary">
+                          Button
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
+            </div>
 
+            <div class="carousel-item">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-4 col-md-12">
+                    <div class="card">
+                      <img
+                        src="https://mdbcdn.b-cdn.net/img/new/standard/nature/184.webp"
+                        class="card-img-top"
+                        alt="Fissure in Sandstone"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">
+                          Some quick example text to build on the card title and
+                          make up the bulk of the card's content.
+                        </p>
+                        <a href="#!" class="btn btn-primary">
+                          Button
+                        </a>
+                      </div>
+                    </div>
+                  </div>
 
+                  <div class="col-lg-4 d-none d-lg-block">
+                    <div class="card">
+                      <img
+                        src="https://mdbcdn.b-cdn.net/img/new/standard/nature/185.webp"
+                        class="card-img-top"
+                        alt="Storm Clouds"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">
+                          Some quick example text to build on the card title and
+                          make up the bulk of the card's content.
+                        </p>
+                        <a href="#!" class="btn btn-primary">
+                          Button
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 d-none d-lg-block">
+                    <div class="card">
+                      <img
+                        src="https://mdbcdn.b-cdn.net/img/new/standard/nature/186.webp"
+                        class="card-img-top"
+                        alt="Hot Air Balloons"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">
+                          Some quick example text to build on the card title and
+                          make up the bulk of the card's content.
+                        </p>
+                        <a href="#!" class="btn btn-primary">
+                          Button
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                    <div class="card">
+                      <img
+                        src="https://mdbcdn.b-cdn.net/img/new/standard/nature/187.webp"
+                        class="card-img-top"
+                        alt="Peaks Against the Starry Sky"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">
+                          Some quick example text to build on the card title and
+                          make up the bulk of the card's content.
+                        </p>
+                        <a href="#!" class="btn btn-primary">
+                          Button
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 mb-4 mb-lg-0 d-none d-lg-block">
+                    <div class="card">
+                      <img
+                        src="https://mdbcdn.b-cdn.net/img/new/standard/nature/188.webp"
+                        class="card-img-top"
+                        alt="Bridge Over Water"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">
+                          Some quick example text to build on the card title and
+                          make up the bulk of the card's content.
+                        </p>
+                        <a href="#!" class="btn btn-primary">
+                          Button
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 mb-4 mb-lg-0 d-none d-lg-block">
+                    <div class="card">
+                      <img
+                        src="https://mdbcdn.b-cdn.net/img/new/standard/nature/189.webp"
+                        class="card-img-top"
+                        alt="Purbeck Heritage Coast"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">
+                          Some quick example text to build on the card title and
+                          make up the bulk of the card's content.
+                        </p>
+                        <a href="#!" class="btn btn-primary">
+                          Button
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -490,13 +702,13 @@ function App() {
             </p>
           </div>
 
-          <div className="faq-list text-uppercase p-3  bg-success bg-opacity-10 border border-info border-start-0 rounded-end ">
+          <div className="faq-list p-3  bg-success bg-opacity-10 border border-info border-start-0 rounded-end ">
             <ul>
-              <li data-aos="fade-up" data-aos-delay="100">
+              <li data-aos="fade-up " data-aos-delay="100">
                 <a
                   data-bs-toggle="collapse"
                   data-bs-target="#faq-list-2"
-                  className="collapsed "
+                  className="collapsed text-uppercase "
                 >
                   <i className="fas fa-circle-question text-success "></i>{" "}
                   Preciso ter um CNPJ para trabalhar como parceiro Mais Valor?{" "}
@@ -520,7 +732,7 @@ function App() {
                 <a
                   data-bs-toggle="collapse"
                   data-bs-target="#faq-list-3"
-                  className="collapsed"
+                  className="collapsed text-uppercase"
                 >
                   <i className="fas fa-circle-question text-success "></i> Tem
                   limite para indicação de clientes?{" "}
@@ -543,7 +755,7 @@ function App() {
                 <a
                   data-bs-toggle="collapse"
                   data-bs-target="#faq-list-4"
-                  className="collapsed"
+                  className="collapsed text-uppercase"
                 >
                   <i className="fas fa-circle-question text-success "></i> Quais
                   documentos eu preciso para indicar um cliente?{" "}
@@ -551,7 +763,7 @@ function App() {
                 </a>
                 <div
                   id="faq-list-4"
-                  className="collapse"
+                  className="collapse text-uppercase"
                   data-bs-parent=".faq-list"
                 >
                   <p>
@@ -570,7 +782,7 @@ function App() {
                 <a
                   data-bs-toggle="collapse"
                   data-bs-target="#faq-list-5"
-                  className="collapsed"
+                  className="collapsed text-uppercase"
                 >
                   <i className="fas fa-circle-question text-success "></i> Como
                   é feita a validação de um cliente indicado?{" "}
@@ -595,7 +807,7 @@ function App() {
                 <a
                   data-bs-toggle="collapse"
                   data-bs-target="#faq-list-6"
-                  className="collapsed"
+                  className="collapsed text-uppercase"
                 >
                   <i className="fas fa-circle-question text-success "></i> Como
                   saber o melhor produto para trabalhar?{" "}
@@ -797,7 +1009,10 @@ function App() {
                   sac@grupomaisvalor.com.br
                 </p>
                 <p>
-                  <i className="fas fa-phone me-3"></i> (11) 3467-0070
+                  <i className="fas fa-phone me-3"></i> TEL -(11) 3467-0070
+                </p>
+                <p>
+                  <i className="fas fa-phone me-3"></i> SAC - 0800-042-0710
                 </p>
               </div>
             </div>
@@ -826,6 +1041,5 @@ function importAll(r) {
 const images = importAll(
   require.context("./assets/img/", false, /\.(png|jpe?g|svg)$/)
 );
-console.log(images);
 
 export default App;
