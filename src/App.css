@@ -206,3 +206,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
   background:#010101;
   padding:12px;
 }
+
+.dropdown_hover:hover>.dropdown-menu {
+  display: block;
+}

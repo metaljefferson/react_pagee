@@ -52,19 +52,18 @@ function App() {
           <nav role="navigation">
             <div class="py-3 text-center border-bottom">
               <img src={images["logo-mv-70x51.svg"]} alt="" class="invert" />
-              
             </div>
             <div class="alert alert-warning alert-dismissible d-flex align-items-center fade show">
-            <i class="fa-solid fa-triangle-exclamation"></i>
-            <strong class="mx-2">Aviso !</strong> O GRUPO MAIS VALOR não
-            solicita depósitos, transferências, adiantamentos ou cobranças de
-            taxas para nenhum de seus clientes.
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="alert"
-            ></button>
-          </div>
+              <i class="fa-solid fa-triangle-exclamation"></i>
+              <strong class="mx-2">Aviso !</strong> O GRUPO MAIS VALOR não
+              solicita depósitos, transferências, adiantamentos ou cobranças de
+              taxas para nenhum de seus clientes.
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="alert"
+              ></button>
+            </div>
           </nav>
           <div class="navbar-expand-md">
             <div class="navbar-dark text-center my-2">
@@ -105,11 +104,10 @@ function App() {
                     Contato
                   </a>
                 </li>
-                
-                <li class="nav-item">
-                  <div class="dropdown"></div>
+
+                <li class="nav-item dropdown dropdown_hover">
                   <a
-                    class="nav-link dropdown-toggle"
+                    class="nav-link"
                     href="#"
                     id="navbarDropdownMenuLink"
                     role="button"
@@ -142,7 +140,6 @@ function App() {
               </ul>
             </div>
           </div>
-         
         </div>
       </nav>
 
@@ -159,7 +156,6 @@ function App() {
             >
               Contratar
             </a>
-            
           </div>
         </div>
       </header>
@@ -510,191 +506,181 @@ function App() {
         </div>
       </section>
 
-      <h2 className="text-center m-5">Nossos Parceiros:</h2>
+      <section className="bg-light page-section">
+        <h2 className="text-center m-5">Nossos Parceiros:</h2>
 
-      <div className="container card-group  w-60">
-        <div className="accordion  d-lg-flex" id="accordion">
-          <div className="accordion-item">
-            <h2 className="accordion-header" id="one">
-              <button
-                className="accordion-button btn"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapse-one"
-                aria-expanded="true"
-                aria-controls="collapse-one"
+        <div className="container card-group  w-60">
+          <div className="accordion  d-lg-flex" id="accordion">
+            <div>
+              <h2 className="accordion-header" id="one">
+                <button
+                  className="accordion-button collapsed btn"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse-one"
+                  aria-expanded="true"
+                  aria-controls="collapse-one"
+                >
+                  <img
+                    className="img-fluid"
+                    src={images["daycoval1.svg"]}
+                  ></img>
+                </button>
+              </h2>
+              <div
+                id="collapse-one"
+                className="accordion-collapse collapse"
+                aria-labelledby="one"
+                data-bs-parent="#accordion"
               >
-                <img
-                  className="card-img-top"
-                  src={images["daycoval1.svg"]}
-                ></img>
-              </button>
-            </h2>
-            <div
-              id="collapse-one"
-              className="accordion-collapse collapse"
-              aria-labelledby="one"
-              data-bs-parent="#accordion"
-            >
-              <div className="accordion-body">
-                <p>Banco Daycoval CNPJ 62.232.889/0001-90</p>
+                <div className="accordion-body">
+                  <p>Banco Daycoval CNPJ 62.232.889/0001-90</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="accordion-item">
-            <h2 className="accordion-header" id="two">
-              <button
-                className="accordion-button collapsed btn"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapse-two"
-                aria-expanded="false"
-                aria-controls="collapse-two"
+            <div>
+              <h2 className="accordion-header" id="two">
+                <button
+                  className="accordion-button collapsed btn"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse-two"
+                  aria-expanded="false"
+                  aria-controls="collapse-two"
+                >
+                  <img className="img-fluid" src={images["safra.svg"]}></img>
+                </button>
+              </h2>
+              <div
+                id="collapse-two"
+                className="accordion-collapse collapse"
+                aria-labelledby="two"
+                data-bs-parent="#accordion"
               >
-                <img
-                  className="img-fluid card-img-top"
-                  src={images["safra.svg"]}
-                ></img>
-              </button>
-            </h2>
-            <div
-              id="collapse-two"
-              className="accordion-collapse collapse"
-              aria-labelledby="two"
-              data-bs-parent="#accordion"
-            >
-              <div className="accordion-body">
-                <p>Banco Safra S/A - CNPJ: 58.160.789/0001-28</p>
+                <div className="accordion-body">
+                  <p>Banco Safra S/A - CNPJ: 58.160.789/0001-28</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="accordion-item">
-            <h2 className="accordion-header" id="three">
-              <button
-                className="accordion-button collapsed btn"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapse-three"
-                aria-expanded="false"
-                aria-controls="collapse-three"
+            <div>
+              <h2 className="accordion-header" id="three">
+                <button
+                  className="accordion-button collapsed btn"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse-three"
+                  aria-expanded="false"
+                  aria-controls="collapse-three"
+                >
+                  <img
+                    className="img-fluid"
+                    src={images["banco-santander.svg"]}
+                  ></img>
+                </button>
+              </h2>
+              <div
+                id="collapse-three"
+                className="accordion-collapse collapse"
+                aria-labelledby="three"
+                data-bs-parent="#accordion"
               >
-                <img
-                  className="img-fluid card-img-top"
-                  src={images["banco-santander.svg"]}
-                ></img>
-              </button>
-            </h2>
-            <div
-              id="collapse-three"
-              className="accordion-collapse collapse"
-              aria-labelledby="three"
-              data-bs-parent="#accordion"
-            >
-              <div className="accordion-body">
-                <p>
-                  2022 Banco Santander (Brasil) S.A., CNPJ: 90.400.888/0001-42
-                  Av. Presidente Juscelino Kubitscheck 2041/2235 – Vila Olímpia
-                  – São Paulo/SP.
-                </p>
+                <div className="accordion-body">
+                  <p>
+                    2022 Banco Santander (Brasil) S.A., CNPJ: 90.400.888/0001-42
+                    Av. Presidente Juscelino Kubitscheck 2041/2235 – Vila
+                    Olímpia – São Paulo/SP.
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div className="accordion-item">
-            <h2 className="accordion-header" id="four">
-              <button
-                className="accordion-button collapsed btn"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapse-four"
-                aria-expanded="false"
-                aria-controls="collapse-four"
+            <div>
+              <h2 className="accordion-header" id="four">
+                <button
+                  className="accordion-button collapsed btn"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse-four"
+                  aria-expanded="false"
+                  aria-controls="collapse-four"
+                >
+                  <img className="img-fluid" src={images["bb.svg"]}></img>
+                </button>
+              </h2>
+              <div
+                id="collapse-four"
+                className="accordion-collapse collapse"
+                aria-labelledby="four"
+                data-bs-parent="#accordion"
               >
-                <img
-                  className="img-fluid card-img-top"
-                  src={images["bb.svg"]}
-                ></img>
-              </button>
-            </h2>
-            <div
-              id="collapse-four"
-              className="accordion-collapse collapse"
-              aria-labelledby="four"
-              data-bs-parent="#accordion"
-            >
-              <div className="accordion-body">
-                <p>
-                  © Banco do Brasil S/A - CNPJ 00.000.000/0001-91 SAUN QD 5 LT
-                  B, Asa Norte, Brasília-DF, Brasil - CEP 70040-912
-                </p>
+                <div className="accordion-body">
+                  <p>
+                    © Banco do Brasil S/A - CNPJ 00.000.000/0001-91 SAUN QD 5 LT
+                    B, Asa Norte, Brasília-DF, Brasil - CEP 70040-912
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div className="accordion-item">
-            <h2 className="accordion-header" id="five">
-              <button
-                className="accordion-button collapsed btn"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapse-five"
-                aria-expanded="false"
-                aria-controls="collapse-five"
+            <div>
+              <h2 className="accordion-header" id="five">
+                <button
+                  className="accordion-button collapsed btn"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse-five"
+                  aria-expanded="false"
+                  aria-controls="collapse-five"
+                >
+                  <img className="img-fluid" src={images["bradesco.svg"]}></img>
+                </button>
+              </h2>
+              <div
+                id="collapse-five"
+                className="accordion-collapse collapse"
+                aria-labelledby="five"
+                data-bs-parent="#accordion"
               >
-                <img
-                  className="img-fluid card-img-top"
-                  src={images["bradesco.svg"]}
-                ></img>
-              </button>
-            </h2>
-            <div
-              id="collapse-five"
-              className="accordion-collapse collapse"
-              aria-labelledby="five"
-              data-bs-parent="#accordion"
-            >
-              <div className="accordion-body">
-                <p>
-                  Banco Bradesco SA | CNPJ: 60.746.948.0001-12 Cidade De Deus,
-                  S/Nº Vila Yara | Osasco | SP | CEP: 06029-900
-                </p>
+                <div className="accordion-body">
+                  <p>
+                    Banco Bradesco SA | CNPJ: 60.746.948.0001-12 Cidade De Deus,
+                    S/Nº Vila Yara | Osasco | SP | CEP: 06029-900
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div className="accordion-item">
-            <h2 className="accordion-header" id="six">
-              <button
-                className="accordion-button collapsed btn"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapse-six"
-                aria-expanded="false"
-                aria-controls="collapse-six"
+            <div>
+              <h2 className="accordion-header" id="six">
+                <button
+                  className="accordion-button collapsed btn"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse-six"
+                  aria-expanded="false"
+                  aria-controls="collapse-six"
+                >
+                  <img className="img-fluid" src={images["itau1.svg"]}></img>
+                </button>
+              </h2>
+              <div
+                id="collapse-six"
+                className="accordion-collapse collapse"
+                aria-labelledby="six"
+                data-bs-parent="#accordion"
               >
-                <img
-                  className="img-fluid card-img-top"
-                  src={images["itau1.svg"]}
-                ></img>
-              </button>
-            </h2>
-            <div
-              id="collapse-six"
-              className="accordion-collapse collapse"
-              aria-labelledby="six"
-              data-bs-parent="#accordion"
-            >
-              <div className="accordion-body">
-                <p>
-                  Itaú Unibanco Holding S.A. CNPJ: 60.872.504/0001-23 Praça
-                  Alfredo Egydio de Souza Aranha, 100, Torre Olavo Setubal,
-                  Parque Jabaquara - CEP 04344-902 - São Paulo - Brasil
-                </p>
+                <div className="accordion-body">
+                  <p>
+                    Itaú Unibanco Holding S.A. CNPJ: 60.872.504/0001-23 Praça
+                    Alfredo Egydio de Souza Aranha, 100, Torre Olavo Setubal,
+                    Parque Jabaquara - CEP 04344-902 - São Paulo - Brasil
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       <section id="faq" className="faq section-bg">
         <div className="container">
@@ -769,7 +755,7 @@ function App() {
                 </a>
                 <div
                   id="faq-list-4"
-                  className="collapse text-uppercase"
+                  className="collapse"
                   data-bs-parent=".faq-list"
                 >
                   <p>
@@ -922,7 +908,7 @@ function App() {
             <span>Conecte-se conosco nas redes sociais :</span>
           </div>
 
-          <div className="icon_networks">
+          <div>
             <a href="#" className="me-4 text-reset">
               <img src={images["facebook.svg"]}></img>
             </a>
@@ -946,7 +932,7 @@ function App() {
             <div className="row mt-3">
               <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                 <h6 className="text-uppercase fw-bold mb-4">
-                  <i className="fas fa-credit-card me-3"></i> Grupo Mais Valor
+                  <i className="fas fa-credit-card me-3"></i>Grupo Mais Valor
                 </h6>
                 <p>
                   A Mais Valor é uma das maiores gestoras de negócios,
@@ -1007,18 +993,18 @@ function App() {
               <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                 <h6 className="text-uppercase fw-bold mb-4">Contato</h6>
                 <p>
-                  <i className="fas fa-home me-3"></i> Rua Quinze de Novembro
-                  184 Sala 601, Centro, SP, 01013-904
+                  <i className="fas fa-home me-3"></i>Rua Quinze de Novembro 184
+                  Sala 601, Centro, SP, 01013-904
                 </p>
                 <p>
                   <i className="fas fa-envelope me-3"></i>{" "}
                   sac@grupomaisvalor.com.br
                 </p>
                 <p>
-                  <i className="fas fa-phone me-3"></i> TEL -(11) 3467-0070
+                  <i className="fas fa-phone me-3"></i>TEL -(11) 3467-0070
                 </p>
                 <p>
-                  <i className="fas fa-phone me-3"></i> SAC - 0800-042-0710
+                  <i className="fas fa-phone me-3"></i>SAC - 0800-042-0710
                 </p>
               </div>
             </div>
