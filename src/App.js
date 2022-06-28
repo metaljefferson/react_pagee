@@ -52,7 +52,19 @@ function App() {
           <nav role="navigation">
             <div class="py-3 text-center border-bottom">
               <img src={images["logo-mv-70x51.svg"]} alt="" class="invert" />
+              
             </div>
+            <div class="alert alert-warning alert-dismissible d-flex align-items-center fade show">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+            <strong class="mx-2">Aviso !</strong> O GRUPO MAIS VALOR não
+            solicita depósitos, transferências, adiantamentos ou cobranças de
+            taxas para nenhum de seus clientes.
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="alert"
+            ></button>
+          </div>
           </nav>
           <div class="navbar-expand-md">
             <div class="navbar-dark text-center my-2">
@@ -93,7 +105,9 @@ function App() {
                     Contato
                   </a>
                 </li>
-                <li class="nav-item dropdown">
+                
+                <li class="nav-item">
+                  <div class="dropdown"></div>
                   <a
                     class="nav-link dropdown-toggle"
                     href="#"
@@ -128,16 +142,7 @@ function App() {
               </ul>
             </div>
           </div>
-          <div class="alert alert-warning alert-dismissible d-flex align-items-center fade show">
-          <i class="fa-solid fa-triangle-exclamation"></i>
-            <strong class="mx-2">ESCLARECIMENTO AOS NOSSOS CLIENTES E COLABORADORES !</strong> There was a problem with your
-            network connection.
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="alert"
-            ></button>
-          </div>
+         
         </div>
       </nav>
 
@@ -154,6 +159,7 @@ function App() {
             >
               Contratar
             </a>
+            
           </div>
         </div>
       </header>
