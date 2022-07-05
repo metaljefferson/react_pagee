@@ -11,44 +11,44 @@ import Amazing from "./components/Amazing";
 import Services from "./components/Services";
 
 function App() {
-  const portfolioLinks = [
-    {
-      title: "Threads",
-      caption: "Illustration",
-    },
-    {
-      title: "Explore",
-      caption: "Graphic Design",
-    },
-    {
-      title: "Finish",
-      caption: "Identity",
-    },
-    {
-      title: "Lines",
-      caption: "Branding",
-    },
-    {
-      title: "Southwest",
-      caption: "Website Design",
-    },
-    {
-      title: "Window",
-      caption: "Photography",
-    },
-    {
-      title: "Pizza",
-      caption: "I love pizza!",
-    },
-    {
-      title: "Pizza",
-      caption: "I love pizza!",
-    },
-    {
-      title: "Pizza",
-      caption: "I love pizza!",
-    },
-  ];
+  // const portfolioLinks = [
+  //   {
+  //     title: "Threads",
+  //     caption: "Illustration",
+  //   },
+  //   {
+  //     title: "Explore",
+  //     caption: "Graphic Design",
+  //   },
+  //   {
+  //     title: "Finish",
+  //     caption: "Identity",
+  //   },
+  //   {
+  //     title: "Lines",
+  //     caption: "Branding",
+  //   },
+  //   {
+  //     title: "Southwest",
+  //     caption: "Website Design",
+  //   },
+  //   {
+  //     title: "Window",
+  //     caption: "Photography",
+  //   },
+  //   {
+  //     title: "Pizza",
+  //     caption: "I love pizza!",
+  //   },
+  //   {
+  //     title: "Pizza",
+  //     caption: "I love pizza!",
+  //   },
+  //   {
+  //     title: "Pizza",
+  //     caption: "I love pizza!",
+  //   },
+  // ];
 
   return (
     <div className="App">
@@ -59,7 +59,7 @@ function App() {
 
       <Services services={Services}></Services>
 
-      <Portfolio portfolioLinks={portfolioLinks}></Portfolio>
+      {/* <Portfolio portfolioLinks={portfolioLinks}></Portfolio> */}
 
       <Amazing amazing={Amazing}></Amazing>
 
